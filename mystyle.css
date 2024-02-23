@@ -1,0 +1,172 @@
+body {
+    padding-top: 70px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.navbar-default {
+        background-color: #002A5C;
+        border-color: #002A5c;
+}
+/* Navbar title */
+.navbar-default .navbar-brand {
+        color: #c8c8c8; 
+}
+/* Navbar font color*/
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+        color: #c8c8c8;
+}
+    /* link */
+.navbar-default .navbar-nav > li > a {
+        color: #c8c8c8;
+}
+/* Navbar Hover color */
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+        color: #FFE498;
+}
+
+.navbar-default .navbar-nav > .active > a, 
+.navbar-default .navbar-nav > .active > a:hover, 
+.navbar-default .navbar-nav > .active > a:focus {
+        color: #373737;
+        background-color: #D5D5D5;
+}
+.navbar-default .navbar-nav > .open > a, 
+.navbar-default .navbar-nav > .open > a:hover, 
+.navbar-default .navbar-nav > .open > a:focus {
+        color: #373737;
+        background-color: #D5D5D5;
+}
+
+.btn .btn-info {
+    color: #002A5C;
+}
+
+.nav-tabs > li.active > a:hover,
+.nav-tabs > li.active > a {
+    color: #000000;
+    background-color: #d6d963;
+	border-color: transparent;
+}
+
+#content-area {
+/*	margin: 50px 50px 50px 50px;
+	padding: 0px;*/
+	margin: 0 auto;
+	width: 70%;
+	height: 60%;
+	color: #f4f4f0;
+	font-size: 120%;
+}	
+
+#picture {
+	margin: 50px 0px 50px 0px;
+	float: left;
+	width: 40%;
+}
+
+.nav .non-href {
+    color: #000000;
+}
+
+.non-href {
+	cursor: pointer;
+    color: #e4d224;
+}
+
+#floatpic {
+	padding: 1px;
+	border: 1px solid #404040;
+	background-color: #004050;
+}
+
+#about {
+	margin: 50px;
+	position: relative;
+	left: 50px;
+}
+
+#notice{
+	clear:right;
+}
+
+#listtable{
+	margin: 25px 0px 0px 0px;
+	width: 70%;
+}
+
+.abstract{
+	width: 80%;
+}
+
+.cvbox {
+    border-top: 2px solid #000000;
+    border-left: 2px solid #000000;
+/*    border-right: 2px solid #000000;
+    border-bottom: 2px solid #000000; */
+    border-top-left-radius: 10px;
+    margin-top: 20px;
+    padding-left: 4px;
+    margin-bottom: 3px;
+    width: 100%;
+}
+
+#cvname {
+    font-size: 20px;
+    font-weight: bold;
+    vertical-align: middle;
+}
+
+.cvtable td {
+    font-size: 14px;
+}
+
+.head {
+    text-align: right;
+    font-weight: bold;
+}
+
+.details {
+    text-align: left;
+}
+
+.cvbox li {
+	font-size: 16px;
+	padding-bottom: 10px;
+}
+
+.clearfix::after {
+    content: "";
+    display: block;
+    height: 50px;
+    clear: both;
+    visibility: hidden;
+}
+
+a {
+	color: #d6d963;
+}
+
+a:hover{
+	color: #94c0cc;
+}
+
+.list-group-item {
+	background-color: transparent;
+}
+
+button, input {
+	color: black;
+}
+
+.table-hover > tbody > tr:hover {
+	background-color: transparent;
+	color:#d6d963;
+}
+
+.typo {
+	margin: 5px 20px;
+}
