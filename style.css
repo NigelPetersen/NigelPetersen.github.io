@@ -40,7 +40,7 @@ h1, h2, h3 {
 }
 #main{
 	width: 900px;
-	float: right;
+	float: center;
 }
 #footer{
 	clear:both; /* pushes past all the paragraphs
