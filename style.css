@@ -18,7 +18,7 @@ h1, h2, h3 {
 #header {
 	background-color: #66CCFF;
 	color: white; /* change text colour */
-	text-align: left; /* center the text */
+	text-align: center; /* center the text */
 	padding: 10px;
 }
 #content{
