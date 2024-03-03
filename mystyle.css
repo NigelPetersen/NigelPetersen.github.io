@@ -11,3 +11,9 @@ button::after{
 	content: "";
 	z-index: -1;
 }
+
+.btn:hover{
+	border: 2px solid #ff96ad;
+	color: #ff96ad;
+	background-color: #17181c;
+}
