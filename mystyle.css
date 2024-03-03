@@ -1,0 +1,13 @@
+button{
+	position: relative;
+	border: none;
+	transition: 0.4s ease-in;
+	z-index: 1;
+}
+
+button::before
+button::after{
+	position: absolute;
+	content: "";
+	z-index: -1;
+}
