@@ -17,7 +17,8 @@
 }
 
 .stack-main {
-  display: block;
+  /*display: block;*/
+  position: relative;
   padding-left: 2.3%;
   padding-right: 2.3%;
   width: 100%;
@@ -29,7 +30,7 @@
   display: grid;
   row-gap: 2em;
   column-gap: 2em;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  /*grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));*/
   margin: 0 auto;
 }
 
