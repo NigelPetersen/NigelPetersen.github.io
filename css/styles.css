@@ -1,0 +1,45 @@
+@import url(header.css);
+@import url(content.css);
+@import url(pagination.css);
+@import url(footer.css);
+@import url(fonts.css);
+@import url(articles-page.css);
+@import url(page.css);
+
+/* ---------------Global------------------ */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  color: #edf0f1;
+  font-family: Roboto, sans-serif;
+  text-decoration-line: none;
+  list-style: none;
+}
+
+html,
+body {
+  min-height: 100hv;
+  height: 100%;
+}
+
+body {
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.75;
+  background-color: rgb(22, 25, 27);
+  font-weight: 400;
+}
+
+[class^="stack"] > * {
+  margin: 0;
+}
+
+[class^="card"]:hover > * {
+  cursor: pointer;
+}
+
+a[href]:hover,
+a:hover > * {
+  color: #00ccff;
+}

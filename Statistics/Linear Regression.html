@@ -1,0 +1,145 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Linear Regression</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script
+      id="MathJax-script"
+      async
+      src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
+    ></script>
+    <link rel="stylesheet" href="../css/styles.css" />
+  </head>
+  <body>
+    <div class="site">
+      <!-- Header -->
+      <header class="header h-page" role="banner">
+        <a class="brand" href="../index.html">HOME</a>
+        <nav class="navbar">
+          <ul class="nav-links">
+            <button class="nav-link"><a href="#">about</a></button>
+            <button class="nav-link">
+              <a href="/pages/teachingCourses.html">teaching</a>
+            </button>
+            <button class="nav-link">
+              <a href="/projects/projectMain.html">projects</a>
+            </button>
+            <button class="nav-link">
+              <a href="/Statistics/statisticsMain.html">statistics</a>
+            </button>
+          </ul>
+        </nav>
+      </header>
+
+      <main class="content stack-medium">
+        <div class="grid post-main">
+          <header class="post-meta title" role="content-info">
+            <span>
+              <time datetime="May 13, 2024">May 13, 2024</time>
+            </span>
+            <h1>Linear Regression</h1>
+            <div class="author">
+              <img src="../assets/ProfPicture.jpg" alt="author-picture" />
+              <div class="author-info">
+                <div class="author-name">Zhengyang Fei</div>
+                <div class="author-bio">
+                  MCs Biostatistics Student at DLSPH, University of Toronto
+                </div>
+              </div>
+            </div>
+          </header>
+
+          <article class="post-body stack-small">
+            <h2>What is Linear Regression?</h2>
+            <p>
+              (Simple) Linear Regression is a statistical model which allows us
+              to predict the relationship between the dependent and independent
+              variables by assuming there exists a straight line which connects
+              the known data in a optimal way. There are many possibilities for
+              an optimal way to construct such a straight line. One commonly
+              used method in linear regression is known as the method of least
+              squares first described by Carl Friedrich Gauss.
+            </p>
+            <h3>Simple Linear Regression</h3>
+            <p>
+              This is the simplest case of linear regression where we only
+              consider one independent and one dependent variable. Recall that
+              such equations can be modelled using the equation $$y_i=\beta_0 +
+              \beta_1 x_i + \epsilon_i$$ where each \(i\) is a counter for each
+              observation.
+            </p>
+
+            <p>
+              This model requires us to estimate the slope and intercept of the
+              straight line. The slope represents a change in the depedent
+              variable for one unit change in the indepedent variale while the
+              intercept represents the predicted value of the depedent variable
+              when the independent variable is zero.
+            </p>
+
+            <h3>Minimizing the Cost Function</h3>
+            <h4>Random Error</h4>
+            <p>
+              Using the philosophy of the method of least squares, our goal is
+              to find the best values of \(\beta_0\) and \(\beta_1\). That is,
+              we want to minimize the sum of the difference between the actual
+              data points that we observed and the predicted points on the line.
+              This is known as the random error, and can be obtained from the
+              previous equation. $$\epsilon_i = y_i - (\beta_0 + \beta_1 x_i)$$
+            </p>
+
+            <h4>Minimizing the MSE</h4>
+            <p>
+              The Mean Squared Error (MSE) measures the average of the squared
+              difference between the actual data points that we observed and the
+              predicted points on the line. $$MSE = \frac{1}{N} \sum_{i=1}^n
+              (y_i - (\beta_0 + \beta_1 x_i))^2$$
+            </p>
+
+            <p>
+              To minimize such a function, we should first take partial
+              derivatives of the MSE with respect to \(\beta_0\) and
+              \(\beta_1\), and set them to \(0\). Hence, we get the normal
+              equations $$\displaystyle{\frac{\partial MSE}{\partial \beta_0} =
+              \frac{2}{n} \sum_{i=1}^n (y_i - (\beta_0 + \beta_1 x_i))} = 0
+              \tag{1}$$ and $$\displaystyle{\frac{\partial MSE}{\partial
+              \beta_1} = \frac{2}{n} \sum_{i=1}^n (y_i - (\beta_0 + \beta_1
+              x_i))x_i} = 0 \tag{2}$$
+            </p>
+
+            <h4>
+              Distribution of \(\beta_0\) and \(\beta_1\) and Confidence
+              Intervals
+            </h4>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
+            tempore enim commodi quos doloremque omnis sunt animi doloribus.
+            Cumque, voluptates.
+
+            <h4>Hypothesis Testing</h4>
+
+            <h4>Coefficient of Determination: \(R^2\)</h4>
+
+            <h3>Assumptions of Linear Regression</h3>
+            As regression is a parametric approach (ie. it makes assumptions
+            about the data), we always need to check the following assumptions
+            on the residuals:
+            <ol>
+              <li>1. Linearity</li>
+              <li>2. Independence</li>
+              <li>3. Normality</li>
+              <li>4. Equal Variance</li>
+            </ol>
+          </article>
+        </div>
+      </main>
+      <!-- Footer -->
+      <footer class="footer">
+        <span>© 2024 by Zhengyang.</span>
+        <a href="https://google.ca" alt="Link to my Twitter page">twitter</a>
+        <a href="https://google.ca" alt="Link to my Github page">github</a>
+        <a href="https://google.ca" alt="Link to my Linkedin page">linkedin</a>
+      </footer>
+    </div>
+  </body>
+</html>

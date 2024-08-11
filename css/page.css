@@ -1,0 +1,112 @@
+.h-page {
+  padding: 2.8% 9.8%;
+}
+
+u {
+  text-decoration: underline;
+}
+
+.stack-medium > * + * {
+  margin-top: 2rem;
+}
+
+.stack-small > * + * {
+  margin-top: 1.8rem;
+}
+
+article > * + * {
+  margin-top: 1rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: minmax(8%, 1fr) minmax(auto, 57rem) minmax(8%, 1fr);
+}
+
+header {
+  font-size: clamp(0.9rem, 1.3vw, 1.3rem);
+}
+
+.author {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 1%;
+}
+
+.author img {
+  border-radius: 50%;
+  width: clamp(1.5rem, 4vw, 3rem);
+  height: clamp(1.5rem, 4vw, 3rem);
+  object-fit: cover;
+}
+
+.author-name {
+  font-size: clamp(0.7rem, 1vw, 1.3rem);
+}
+
+.author-info {
+  margin-left: 2%;
+}
+
+.author-bio {
+  font-size: clamp(0.5rem, 1vw, 0.8rem);
+  color: #8a9eb5;
+}
+
+time {
+  color: #8a9eb5;
+}
+
+.post-main > * {
+  grid-column-start: 2;
+  grid-column-end: auto;
+}
+
+.title {
+  font-size: clamp(0.8rem, 1.8vw, 1.2rem);
+  margin-bottom: 3%;
+}
+
+h2 {
+  font-size: clamp(1.2rem, 2.5vw, 1.8rem);
+}
+
+.post-meta span {
+  color: #8a9eb5;
+  font-weight: 600;
+  font-size: 1em;
+  text-transform: uppercase;
+}
+
+.post-body {
+  width: 100%;
+  font-size: clamp(1rem, 1.8vw, 1.4rem);
+}
+
+.post-body ul {
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style-position: outside;
+  list-style-image: initial;
+}
+
+.post-body ul > li {
+  position: relative;
+  padding-left: 1.2em;
+}
+
+.post-body ul > li:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: inline-block;
+  width: 0.5em;
+  height: 0.5em;
+  margin-top: 0.645em;
+  background: #00ccff;
+  border: 1px solid rgb(22, 25, 27);
+  border-radius: 0.1em;
+  content: "";
+}
