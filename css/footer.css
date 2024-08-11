@@ -5,8 +5,8 @@
   flex-wrap: wrap;
   align-items: center;
   justify-content: flex-end;
-  padding: 2em;
-  background: #333a41;
+  padding: 1.5em;
+  background: rgb(44, 44, 44);
   font-weight: 500;
 }
 
